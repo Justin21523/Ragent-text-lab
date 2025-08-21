@@ -1,0 +1,10 @@
+# AI Cache & Models (防止意外提交大檔案)
+/../
+data/
+outs/
+indices/
+*.pt
+*.bin
+*.gguf
+*.safetensors
+.env
