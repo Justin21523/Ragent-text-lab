@@ -1,0 +1,16 @@
+groundedness:
+  rule_weight: 0.4
+  semantic_weight: 0.6
+  threshold: 0.6
+  
+  embedding_model: "BAAI/bge-m3"
+  fallback_model: "BAAI/bge-small-zh-v1.5"
+  
+  metrics:
+    - jaccard
+    - containment  
+    - semantic_similarity
+    
+  export:
+    formats: [json, csv, markdown]
+    output_dir: "outs/eval"
